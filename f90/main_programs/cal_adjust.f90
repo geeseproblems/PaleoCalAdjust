@@ -63,9 +63,10 @@ use month_length_subs
 use pseudo_daily_interp_subs
 use mp_interp_epstein_subs
 use mp_interp_harzallah_subs
-use omp_lib
+! use omp_lib
 
 implicit none
+
 
 ! Variables defined in modules
 ! integer(4)              :: nm      !number of months in year
@@ -189,10 +190,13 @@ integer(4)              :: ntotalpts, numberdone, nprogress, nextra
 real(4)                 :: onepercent, nextonepercent
 
 ! if OpenMP enabled
-max_threads = 16 ! omp_get_max_threads()
-write (*,'("OMP max_threads: ",i4)') max_threads
-max_threads = max_threads !- 2 ! subtract 2 to free up threads for other computational processes if necessary
-call omp_set_num_threads(max_threads)
+! max_threads = 16 ! omp_get_max_threads()
+print *, 'PROGRAM STARTED'
+max_threads = 1
+print *, 'OMP disabled on Windowns: using 1 thread'
+! write (*,'("OMP max_threads: ",i4)') max_threads
+! max_threads = max_threads !- 2 ! subtract 2 to free up threads for other computational processes if necessary
+! call omp_set_num_threads(max_threads)
 
 ! get the info-file name:
 call get_command_argument (1, infofile, infofile_len, infofile_status)

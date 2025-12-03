@@ -1,0 +1,3 @@
+header,activity,variable,time_freq,calendar_type,begageBP,endageBP,agestep,begyrCE,nsimyrs,interp_method,no_negatives,match_mean,tol,source_path,source_file,adjusted_path,adjusted_file
+"MH","evap","Amon","noleap",-6000,-6000,1,1,1,"Harzallah","True","True",1.0,"C:\Users\mayae\Documents\GitHub\PaleoCalAdjust\f90\makefiles\cal_adjust\","evap_Amon_AWI_MH_input.nc","C:\Users\mayae\Documents\GitHub\PaleoCalAdjust\f90\makefiles\cal_adjust\","evap_Amon_AWI_MH_output.nc"
+

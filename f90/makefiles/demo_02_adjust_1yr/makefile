@@ -1,9 +1,8 @@
 # demo_02_adjust_1yr
 
 # (relative) paths to source files -- needs localization
-prog = ../../main_programs/
-mod = ../../modules/
-
+prog = C:/Users/mayae/Documents/GitHub/PaleoCalAdjust/f90/main_programs/
+mod = C:/Users/mayae/Documents/GitHub/PaleoCalAdjust/f90/modules/
 # compiler and flags
 FC = gfortran 
 FFLAGS = -O3 -ffree-line-length-160 -Wall 
